@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <ImageButton
+                android:id="@+id/btn_revert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/fragment_bg"
+                android:src="@android:drawable/ic_menu_revert" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="fixed"/-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /-->
+    <ListView
+        android:id="@+id/listHira"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/scrollView1"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal"
+        android:layout_marginTop="60dp"
+        android:visibility="visible">
+
+        <com.example.jon.hirao75.ZoomTextView
+            android:id="@+id/affichHira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+        <!--TextView
+            android:id="@+id/affichHira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:lineSpacingExtra="8sp"
+            android:scrollbars="horizontal"
+            android:textAlignment="center"
+            android:textSize="14sp" /-->
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

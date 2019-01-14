@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:id="@+id/title"
+        android:padding="20dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--***********************-->
+    <!--*** TOOLBAR LAYOUT ****-->
+    <!--***********************-->
+
+    <LinearLayout android:id="@+id/toolbar"
+        android:layout_marginBottom="-50dip"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textKely"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

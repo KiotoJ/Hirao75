@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg">
+
+    <ListView
+        android:id="@+id/listHira"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scrollView1"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="horizontal"
+        android:layout_marginTop="148dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/affichHira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:lineSpacingExtra="8sp"
+            android:scrollbars="horizontal"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

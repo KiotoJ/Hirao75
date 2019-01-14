@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--item android:id="@+id/act_settings"
+        android:title="Parametres"/-->
+    <item android:id="@+id/act_version"
+        android:title="Version App"/>
+    <item android:id="@+id/act_cherch"
+        android:title="Recherche"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/quit"
+        android:title="Quitter"/>
+</menu>
